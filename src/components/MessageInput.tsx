@@ -16,14 +16,17 @@ export default function MessageInput({ onSend }: Props) {
   };
 
   return (
+    
     <div className="relative">
       {/* 🔷 Formas decorativas */}
+      <div className='box absolute left-[-1px] top-[-1px] flex flex-col rounded-4xl p-4 bg-black/10 backdrop-blur-3xl '></div>
       <div className="absolute bottom-1 right-1 w-24 h-24 bg-[#E9D362] rounded-full z-0" />
-
+      
       <form
         onSubmit={handleSubmit}
-        className="box relative z-10 flex bg-chat flex-col justify-between rounded-4xl p-4 border border-white/20 bg-black/10 backdrop-blur-3xl shadow-lg"
+        className="relative z-10 flex bg-chat flex-col justify-between rounded-4xl p-4 bg-black/10 backdrop-blur-3xl "
       >
+        
         <textarea
           className="flex rounded px-3 text-sm text-white bg-transparent outline-none resize-none"
           value={text}
@@ -35,7 +38,7 @@ export default function MessageInput({ onSend }: Props) {
           <div className="flex gap-3">
             <button
               type="submit"
-              className="bg-[#121212] border border-[#686868] px-2 py-2 rounded-4xl hover:bg-[#242424]"
+              className="animate-bounce bg-[#121212] border border-[#686868] px-2 py-2 rounded-4xl hover:bg-[#242424]"
             >
               <ArrowDown className="text-[#d9d9d9]" />
             </button>
@@ -52,14 +55,19 @@ export default function MessageInput({ onSend }: Props) {
               Relatórios
             </button>
           </div>
+          
           <button
             type="submit"
-            className="bg-[#E9D362] border border-[#686868] px-2 py-2 rounded-full hover:bg-[#e0bb2f]"
+            className=" bg-[#E9D362] border border-[#686868] px-2 py-2 rounded-full hover:bg-[#e0bb2f]"
           >
             <SendHorizontal className="text-[#030303]" />
           </button>
+          
         </div>
+        
       </form>
+      
     </div>
+    
   );
 }

@@ -3,19 +3,20 @@
 
 .bg-chat {
     width: 48rem ;
-    max-width: 100%;
     height: 10rem;
-    border: 1px solid rgba(03, 03, 03, 0.2);
-    background: linear-gradient(#030303) padding-box, linear-gradient(
-          var(--angle),
-          #030303,
-          #E9D362
-        ) border-box;
-    animation: 5s rotate cubic-bezier(.27,0,1,.75) infinite;
+    
 }
 
 .box {
-    
+  width: 48.2rem ;
+    height: 10.2rem;
+  border: 1px solid rgba(03, 03, 03, 0.2);
+  background: linear-gradient(#030303) padding-box, linear-gradient(
+        var(--angle),
+        #191919,
+        #E9D362
+      ) border-box;
+  animation: 10s rotate linear infinite;
   }
   
   @keyframes rotate {
